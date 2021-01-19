@@ -62,18 +62,14 @@ class ObjectPoint1D:
   def __init__(self, x):
     self.x = x
 
-def affiche_point1D(point1d):
-  print(f"Point1D(x={point1d.x})")
-
-def str_(point1d):
-  return f"Point1D(x={point1d.x})"
+def __str__(self):
+  return f"Point1D(x={self.x})"
 
 np1d = ObjectPoint1D(0.5)
 np1d.x 
-affiche_point1D(np1d)
-print(str_(np1d))
-
+print(np1d)
+""""
 np1d1 = ObjectPoint1D(0.6)
 np1d1.x 
-affiche_point1D(np1d1)
-print(str_(np1d1))
+print(np1d1)
+"""
