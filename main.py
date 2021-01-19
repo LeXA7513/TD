@@ -35,3 +35,9 @@ print("Le carré de", nombre,"vaut", carre)
 message_carr = f"Le carré de {nombre} vaut {nombre**2}"
 
 print(message_carr)
+
+def ajout_point(p_1, p_2):
+  p3_x =p_1[0]+p_2[0]
+  p3_y =p_1[1]+p_2[1]
+  return Point2D(p3_x,p3_y)
+print(f"{p0} + {p1} = {ajout_point(p0,p1)}")
