@@ -41,3 +41,16 @@ def ajout_point(p_1, p_2):
   p3_y =p_1[1]+p_2[1]
   return Point2D(p3_x,p3_y)
 print(f"{p0} + {p1} = {ajout_point(p0,p1)}")
+
+p3 = ajout_point(p0,p1)
+print(list(zip(p0,p1)))
+
+def ajout_point_zip(p_1, p_2):
+  coord = []
+  for x in zip(p_1,p_2):
+    print("Coordonnée")
+    coord.append(sum(x))
+    print(coord)
+  return Point2D(coord[0],coord[1])
+
+print(f"zip ok :{ajout_point_zip(p0, p1) == p3}")
