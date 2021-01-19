@@ -54,3 +54,20 @@ def ajout_point_zip(p_1, p_2):
   return Point2D(coord[0],coord[1])
 
 print(f"zip ok :{ajout_point_zip(p0, p1) == p3}")
+
+#Grouper les fonctions par dimension ?
+print('Affichage des points')
+
+class ObjectPoint1D:
+  def __init__(self, x):
+    self.x=x
+def affiche_point1D(point1d):
+  print(point1d.x)
+
+np1d = ObjectPoint1D(0.5)
+np1d.x 
+print(np1d)
+
+np1d1 = ObjectPoint1D(0.6)
+np1d1.x 
+print(np1d1)
